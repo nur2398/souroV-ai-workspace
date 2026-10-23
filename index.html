@@ -1,0 +1,194 @@
+আমরা SOUROV AI Workspace-এর মূল কোড তৈরি করব। আপনি GitHub-এ ফাইল তৈরি করে কোড পেস্ট করবেন। প্রতিটি ফাইলের জন্য প্রথমে File Name, তারপর কোড দিচ্ছি। একবারে একটি ফাইল করে এগোব।
+
+📁 ফাইল ১ — index.html
+
+কাজ: ওয়েবসাইটের মূল পেজ এবং AI Workspace-এর কাঠামো তৈরি করা।
+
+GitHub-এ যা করবেন:
+
+1. আপনার repository খুলুন: souroV-ai-workspace
+2. Add file → Create new file নির্বাচন করুন।
+3. File name ঘরে লিখুন: index.html
+4. নিচের সম্পূর্ণ কোড পেস্ট করুন।
+5. Commit changes চাপুন।
+
+নিচের কোডটি পেস্ট করুন:
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="SOUROV AI Workspace — one workspace for AI tools, agents, and productivity.">
+  <title>SOUROV AI Workspace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="SOUROV AI Workspace home">
+        <span class="brand-icon">S</span>
+        <span class="brand-text">SOUROV <small>AI WORKSPACE</small></span>
+      </a>  <div class="nav-label">WORKSPACE</div>
+  <nav class="navigation">
+    <a class="nav-item active" href="#dashboard">◫ <span>Dashboard</span></a>
+    <a class="nav-item" href="#ai-tools">✧ <span>AI Tools</span></a>
+    <a class="nav-item" href="#agents">⬡ <span>AI Agents</span></a>
+    <a class="nav-item" href="#projects">▤ <span>Projects</span></a>
+    <a class="nav-item" href="#activity">◷ <span>Activity</span></a>
+  </nav>
+
+  <div class="nav-label">MANAGEMENT</div>
+  <nav class="navigation">
+    <a class="nav-item" href="#favorites">☆ <span>Favorites</span></a>
+    <a class="nav-item" href="#settings">⚙ <span>Settings</span></a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <div class="status-dot"></div>
+    <div>
+      <strong>Workspace ready</strong>
+      <small>Frontend preview mode</small>
+    </div>
+  </div>
+</aside>
+
+<main class="main-content" id="dashboard">
+  <header class="topbar">
+    <button class="menu-button" id="menuButton" aria-label="Toggle navigation">☰</button>
+    <div class="breadcrumb">Workspace <span>/</span> Dashboard</div>
+    <div class="topbar-right">
+      <span class="online-indicator"></span>
+      <span class="topbar-status">Local workspace</span>
+      <div class="avatar" title="SOUROV">S</div>
+    </div>
+  </header>
+
+  <section class="welcome-section">
+    <div>
+      <div class="eyebrow">YOUR AI COMMAND CENTER</div>
+      <h1>Welcome to your <span>AI Workspace.</span></h1>
+      <p>Bring your AI tools, agents, and projects together in one place.</p>
+    </div>
+    <div class="date-badge" id="currentDate">Your workspace</div>
+  </section>
+
+  <section class="stats-grid" aria-label="Workspace overview">
+    <article class="stat-card">
+      <div class="stat-top"><span>AI TOOLS</span><span class="stat-icon">✧</span></div>
+      <div class="stat-number">04</div>
+      <div class="stat-description">Featured tool cards</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-top"><span>AI AGENTS</span><span class="stat-icon">⬡</span></div>
+      <div class="stat-number">03</div>
+      <div class="stat-description">Agent concepts</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-top"><span>PROJECTS</span><span class="stat-icon">▤</span></div>
+      <div class="stat-number">01</div>
+      <div class="stat-description">Workspace project</div>
+    </article>
+    <article class="stat-card">
+      <div class="stat-top"><span>STATUS</span><span class="stat-icon">✓</span></div>
+      <div class="stat-number status-number">Ready</div>
+      <div class="stat-description">Frontend initialized</div>
+    </article>
+  </section>
+
+  <section class="section-block" id="ai-tools">
+    <div class="section-heading">
+      <div>
+        <h2>AI Tools</h2>
+        <p>Explore your central collection of AI tools.</p>
+      </div>
+      <span class="section-tag">FEATURED</span>
+    </div>
+
+    <div class="tool-grid">
+      <article class="tool-card">
+        <div class="tool-icon chatgpt-icon">✳</div>
+        <h3>ChatGPT</h3>
+        <p>Writing, research, problem-solving, and everyday AI assistance.</p>
+        <a class="tool-link" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Open ChatGPT ↗</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon gemini-icon">✦</div>
+        <h3>Google Gemini</h3>
+        <p>Explore Google's AI assistant and multimodal capabilities.</p>
+        <a class="tool-link" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Open Gemini ↗</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon claude-icon">✺</div>
+        <h3>Claude</h3>
+        <p>Work with documents, writing, analysis, and coding tasks.</p>
+        <a class="tool-link" href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Open Claude ↗</a>
+      </article>
+
+      <article class="tool-card">
+        <div class="tool-icon copilot-icon">⌘</div>
+        <h3>Microsoft Copilot</h3>
+        <p>Discover AI-powered assistance for everyday productivity.</p>
+        <a class="tool-link" href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">Open Copilot ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-block" id="agents">
+    <div class="section-heading">
+      <div>
+        <h2>AI Agents</h2>
+        <p>Organize future automated workflows in one workspace.</p>
+      </div>
+      <span class="section-tag">PLANNED</span>
+    </div>
+
+    <div class="agent-grid">
+      <article class="agent-card">
+        <div class="agent-symbol">⌘</div>
+        <div><h3>Research Agent</h3><p>Research and organize information.</p></div>
+        <span class="coming-soon">Planned</span>
+      </article>
+      <article class="agent-card">
+        <div class="agent-symbol">↗</div>
+        <div><h3>Workflow Agent</h3><p>Coordinate repeatable tasks.</p></div>
+        <span class="coming-soon">Planned</span>
+      </article>
+      <article class="agent-card">
+        <div class="agent-symbol">▤</div>
+        <div><h3>Project Agent</h3><p>Track project plans and progress.</p></div>
+        <span class="coming-soon">Planned</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-block" id="projects">
+    <div class="section-heading">
+      <div>
+        <h2>Workspace Project</h2>
+        <p>Your main project overview.</p>
+      </div>
+    </div>
+    <article class="project-card">
+      <div class="project-mark">S</div>
+      <div class="project-details">
+        <h3>SOUROV AI Workspace</h3>
+        <p>A central dashboard for AI tools, agents, and productivity workflows.</p>
+        <div class="project-meta"><span class="project-dot"></span> Frontend setup</div>
+      </div>
+      <span class="project-status">In development</span>
+    </article>
+  </section>
+
+  <footer class="footer" id="activity">
+    <span>© <span id="currentYear"></span> SOUROV AI Workspace</span>
+    <span>Built for a smarter workflow.</span>
+  </footer>
+</main>
+
+  </div>  <script src="script.js"></script></body>
+</html>গুরুত্বপূর্ণ: এই ফাইলটি শুধু মূল HTML কাঠামো। ওয়েবসাইটের ডিজাইনের জন্য পরবর্তী ফাইলে style.css এবং মেনু ও তারিখের মতো ছোট ইন্টারঅ্যাকশনের জন্য script.js লাগবে। AI টুলগুলোর লিংক কাজ করবে, কিন্তু নিজের AI API সংযোগ বা স্বয়ংক্রিয় এজেন্ট এখনো তৈরি হয়নি।
+
+প্রথমে এই ফাইলটি GitHub-এ Commit করুন। তারপর আমাকে Done লিখুন—আমি দ্বিতীয় ফাইল style.css-এর সম্পূর্ণ কোড দেব।
